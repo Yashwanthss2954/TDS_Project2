@@ -1,5 +1,21 @@
+# /// script
+# requires-python = ">=3.9"
+# dependencies = [
+#     "pandas",
+#     "matplotlib",
+#     "seaborn",
+#     "httpx",
+#     "numpy",
+#     "scipy",
+#     "scikit-learn",
+#     "tabulate",
+#     "requests",
+#     "chardet"
+# ]
+# ///
+
 import pandas as pd
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 import sys
@@ -10,6 +26,8 @@ from sklearn.cluster import KMeans
 from scipy.stats import zscore
 import numpy as np
 import chardet
+# from dotenv import load_dotenv
+# load_dotenv()
 
 # Loading dataset
 def load_dataset(file_path):
